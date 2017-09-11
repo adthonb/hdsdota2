@@ -1,0 +1,541 @@
+@font-face {
+ font-family: 'GoudyTrajan';
+ src: url('../font/goudytrajan-bold-pro.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'Radiance';
+ src: url('../font/radiance.woff') format('woff');
+}
+
+@font-face {
+ font-family: 'Radiance-Bold';
+ src: url('../font/radiance-bold.woff') format('woff');
+}
+
+body {
+	background: url('../images/bg.png') #000 repeat-y top center;
+	color: #999;
+}
+
+#wrapper {
+	max-width: 976px;
+	margin: 0 auto;
+	font-family: 'Radiance', arial, helvetica, sans-serif;
+}
+
+/*General set*/
+.gttext {
+	text-transform: uppercase;
+	text-align: center;
+	font-family: 'GoudyTrajan', 'Times New Roman', serif;
+}
+
+ul {
+	padding: 0;
+	list-style: none;
+}
+
+section {
+	margin: 0 0 20px 0;
+}
+
+section h2 {
+	margin: 0;
+	font-size: 1.5em;
+	color: #af9481;
+	letter-spacing: 3px;
+}
+
+.secset {
+	padding: 20px;
+}
+/*Section default*/
+#rule, #register {
+	background-image: url('../images/section-bg.jpg');
+	background-repeat: no-repeat;
+}
+#register, #rule {
+	height: 720px;
+}
+#schedule h2, #register h2, #rule h2 {
+	margin-top: 10px;
+}
+
+/*Header*/
+header {
+	background-image: url('../images/header-bg.jpg');
+	background-position: top center;
+	background-repeat: no-repeat;
+	margin-bottom: 56px;
+}
+#header-container {
+	position: relative;
+	margin: 0 auto;
+	max-width: 976px;
+	height: 200px;
+}
+nav {
+	position: absolute;
+	background-color: #141213;
+	box-shadow: inset 0 0 0.5em #1f1d1e;
+	top: 202px;
+	width: 100%;
+}
+nav li {
+	display: inline-block;
+	text-align: center;
+	width: 24.5%;
+}
+nav a {
+	font-size: 1.2em;
+	color: #af9c8f;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+nav a.selected {
+	color: #efefef;
+}
+nav a:hover {
+	color: #c3c4bb;
+}
+/*Overview section*/
+#overview span {
+	display: inline-block;
+	width: 100%;
+	padding: 5px 0;
+	text-align: center;
+	font-size: 1em;
+}
+#overview span.upt {
+	text-transform: uppercase;
+}
+/*Schedule section*/
+#schedule {
+	text-align: center;
+}
+#schedule li {
+	line-height: 1.375em;
+	margin-bottom: 24px;
+}
+#schedule li p {
+	margin: 0;
+}
+.date_title {
+	color: #af9481;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.8);
+	font-size: 1.3em;
+}
+.schedule_note {
+	margin-top: 30px;
+	color: #b21b1b;
+	line-height: 1.375em;
+}
+/*Prize section*/
+#prize {
+	position: relative;
+	background-image: url('../images/prize-bg.jpg');
+	background-repeat: no-repeat;
+	height: 236px;
+	text-align: center;
+}
+.prize_total {
+	color: #adadad;
+	font-size: 4.5em;
+	line-height: 85px;
+}
+.prize_text {
+	color: #636363;
+}
+.button {
+	position: absolute;
+	bottom: 60px;
+	left: 362px;
+	background-image: url('../images/button.png');
+	background-position: top;
+	height: 54px;
+	width: 256px;
+	text-decoration: none;
+}
+.button:hover {
+	background-position: bottom;
+}
+.button_text {
+	color: #ba9e88;
+	font-size: 1.3em;
+	letter-spacing: 2px;
+	text-align: center;
+	padding-top: 13px;
+}
+.button_text:hover {
+	color: #ffe8d6;
+}
+/*Footer section*/
+footer {
+	position: relative;
+	bottom: 50px;
+	margin-bottom: 80px;
+}
+.hds-logo {
+	position: absolute;
+	background-image: url('../images/hds_logo.png');
+	background-position: top;
+	height: 46px;
+	width: 266px;
+	left: 201px;
+}
+.hds-logo:hover {
+	background-position: bottom;
+}
+.dota2-logo {
+	position: absolute;
+	background-image: url('../images/dota2_logo.png');
+	background-position: top;
+	height: 46px;
+	width: 172px;
+	left: 487px;
+}
+.dota2-logo:hover {
+	background-position: bottom;
+}
+.valve-logo {
+	position: absolute;
+	background-image: url('../images/valve_logo.png');
+	background-position: top;
+	height: 46px;
+	width: 136px;
+	left: 676px;
+}
+.valve-logo:hover {
+	background-position: bottom;
+}
+footer p {
+	position: absolute;
+	top: 40px;
+	font-size: 0.9em;
+	color: #636363;
+	text-align: center;
+}
+/*Register page*/
+#register p {
+	text-align: center;
+	font-size: 2em;
+	color: #2764af;
+}
+#register ul {
+	margin-bottom: 0;
+	text-align: center;
+	font-size: 1.3em;
+}
+#register li {
+	line-height: 1.6em;
+}
+.register-button {
+	display: block;
+	background-image: url('../images/button.png');
+	background-position: top;
+	height: 54px;
+	width: 256px;
+	margin: 10px auto;
+	text-decoration: none;
+}
+.register-button:hover {
+	background-position: bottom;
+}
+.register-button-text {
+	color: #ba9e88;
+	text-align: center;
+	padding-top: 13px;
+}
+.register-button-text:hover {
+	color: #ffe8d6;
+}
+/*Rule page*/
+#rule ul {
+	list-style: circle;
+	margin-top: 10px;
+	padding-left: 30px;
+}
+#rule li {
+	line-height: 1.6em;
+}
+/*Bracket page*/
+#bracket {
+	height: 8850px;
+	padding: 30px 0 20px 0;
+}
+.bracket-container {
+	width: 712px;
+	height: 530px;
+	margin: 15px auto;
+}
+.section {
+    width: 133px;
+    height: 520px;
+    float: left;
+}
+
+.section > div {
+    width: 100px;
+    height: 20px;
+    border: 2px solid #323232;
+    margin: 10px 0;
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px 10px 20px;
+    text-align: center;
+}
+
+.section > div:nth-child(2n) {
+    margin-bottom: 40px;
+}
+
+.connecter { 
+    width: 30px;
+    height: 520px;
+    float: left;
+}
+
+.line { 
+    width: 30px;
+    height: 520px;
+    float: left;
+}
+
+.connecter div {
+    border: 2px solid #323232;
+    border-left: none;
+    height: 50px;
+    width: 100%;
+    margin: 85px 0 0 1px;
+}
+
+.connecter div:first-child {
+    margin: 32px 0 0 1px;
+}
+
+.line div {
+    border-top: 2px solid #323232;
+    margin: 138px 0 0 1px;
+}
+
+.line div:first-child {
+    margin-top: 55px;
+}
+
+#quarterFinals > div {
+    margin-top: 91px;
+}
+
+#quarterFinals > div:first-child {
+    margin-top: 37px;
+}
+
+#conn2 div {
+    margin-top: 133px;
+    height: 133px;
+}
+
+#conn2 div:first-child {
+    margin-top: 57px;
+}
+
+#line2 div {
+    margin-top: 270px;
+}
+
+#line2 div:first-child {
+    margin-top: 125px;
+}
+#semiFinals > div {
+    margin-top: 230px;
+}
+#semiFinals > div:first-child {
+    margin-top: 105px;
+}
+#conn3 div {
+    margin-top: 125px;
+    height: 270px;
+}
+
+#line3 div {
+    margin-top: 270px;
+}
+
+#final > div {
+    margin-top: 250px;
+}
+
+/*All team bracket*/
+.all-bracket-container {
+	width: 100%;
+	height: 3265px;
+	font-size: 0.8em;
+}
+.a-section {
+    width: 113px;
+    height: 2905px;
+    float: left;
+}
+.a-section > div {
+    width: 90px;
+    height: 15px;
+    border: 2px solid #323232;
+    margin: 10px 0;
+    background-color: transparent;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    text-align: center;
+}
+.a-section > div:nth-child(2n) {
+    margin-bottom: 20px;
+}
+.a-connecter { 
+    width: 15px;
+    height: 520px;
+    float: left;
+}
+.a-line { 
+    width: 15px;
+    height: 520px;
+    float: left;
+}
+.a-connecter div {
+    border: 2px solid #323232;
+    border-left: none;
+    height: 40px;
+    width: 100%;
+    margin: 64px 0 0 1px;
+}
+.a-connecter div:first-child {
+    margin: 35px 0 0 1px;
+}
+.a-line div {
+    border-top: 2px solid #323232;
+    margin: 106px 0 0 1px;
+}
+.a-line div:first-child {
+    margin-top: 55px;
+}
+#qualifyingRounds > div {
+    margin-top: 69px;
+}
+#qualifyingRounds > div:first-child {
+    margin-top: 38px;
+}
+#a-conn2 div {
+    margin-top: 104px;
+    height: 108px;
+}
+#a-conn2 div:first-child {
+    margin-top: 54px;
+}
+#a-line2 div {
+    margin-top: 214px;
+}
+#a-line2 div:first-child {
+    margin-top: 110px;
+}
+#qualifyingRounds2 > div {
+    margin-top: 177px;
+}
+#qualifyingRounds2 > div:first-child {
+    margin-top: 92px;
+}
+#a-conn3 div {
+    margin-top: 214px;
+    height: 214px;
+}
+#a-conn3 div:first-child {
+    margin-top: 109px;
+}
+#a-line3 div {
+    margin-top: 429px;
+}
+#a-line3 div:first-child {
+    margin-top: 220px;
+}
+#a-quarterFinals > div {
+    margin-top: 392px;
+}
+#a-quarterFinals > div:first-child {
+    margin-top: 200px;
+}
+#a-conn4 div {
+    margin-top: 432px;
+    height: 426px;
+}
+#a-conn4 div:first-child {
+    margin-top: 219px;
+}
+#a-line4 div {
+    margin-top: 876px;
+}
+#a-line4 div:first-child {
+    margin-top: 438px;
+}
+#a-semiFinals > div {
+    margin-top: 840px;
+}
+#a-semiFinals > div:first-child {
+    margin-top: 420px;
+}
+#a-conn5 div {
+    margin-top: 880px;
+    height: 876px;
+}
+#a-conn5 div:first-child {
+    margin-top: 438px;
+}
+#a-line5 div {
+    margin-top: 1752px;
+}
+#a-line5 div:first-child {
+    margin-top: 876px;
+}
+#a-Finals > div {
+    margin-top: 1714px;
+}
+#a-Finals > div:first-child {
+    margin-top: 858px;
+}
+#a-conn6 div {
+    height: 1752px;
+}
+#a-conn6 div:first-child {
+    margin-top: 876px;
+}
+#a-line6 div {
+    margin-top: 1752px;
+}
+#a-final > div {
+    margin-top: 1732px;
+}
+
+/*All team list*/
+.allteam-container {
+	width: 100%;
+}
+.allteam-left, .allteam-right {
+	margin: 0 40px;
+	text-align: center;
+}
+.allteam-left p, .allteam-right p {
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #ddd;
+}
+.allteam-left span, .allteam-right span {
+	display: block;
+	font-size: 1em;
+	margin-bottom: 5px;
+}
+.allteam-left {
+	float: left;
+	width: 40%;
+}
+.allteam-right {
+	float: right;
+	width: 40%;
+}
